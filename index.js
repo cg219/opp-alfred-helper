@@ -35,12 +35,6 @@ async function* generatePaths(search) {
     }
 }
 
-async function* addNewLine(s) {
-    for await (const line of s) {
-        yield `${line}${EOL}`
-    }
-}
-
 async function* toAlfred(s) {
     var amount = 0;
 
